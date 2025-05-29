@@ -247,7 +247,7 @@ lvgl:
                     file: widgets/buttons/icon_buttons/volume_buttons/vol_down.yaml
                     vars:
                       uid: living_room_tv_vol_down
-                      entity_id: media_player.living_room_tv
+                      entity_id: media_player.${living_room_tv}
                       <<: *button_widget_vars
 
     - id: lighting_1
