@@ -84,7 +84,8 @@ lvgl:
                   on_short_click:
                     - homeassistant.action:
                         action: media_player.toggle
-                        data: { entity_id: ${living_room_tv} }
+                        data:
+                          entity_id: ${living_room_tv}
                   on_long_press:
                     - homeassistant.action:
                         action: media_player.toggle
@@ -116,7 +117,8 @@ lvgl:
                   on_short_click:
                     - homeassistant.action:
                         action: media_player.media_play_pause
-                        data: { entity_id: ${living_room_tv} }
+                        data:
+                          entity_id: ${living_room_tv}
 
               - button: # volume up
                   <<: !include
