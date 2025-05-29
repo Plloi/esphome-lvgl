@@ -138,7 +138,8 @@ lvgl:
                   on_short_click:
                     - homeassistant.action:
                         action: media_player.media_stop
-                        data: { entity_id: ${living_room_tv} }
+                        data:
+                          entity_id: ${living_room_tv}
 
               - button: # volume down
                   <<: !include
