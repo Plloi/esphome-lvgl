@@ -203,12 +203,12 @@ lvgl:
                       <<: *button_widget_vars
                   on_short_click:
                     - homeassistant.action:
-                        action: homeassistant.turn_on
-                        data: { entity_id: scene.living_room_lights_tv_watching }
+                        action: light.turn_on
+                        data: { entity_id: light.shelf_01, brightness_pct: '50' }
                   on_long_press:
                     - homeassistant.action:
                         action: light.turn_on
-                        data: { entity_id: light.all_living_room_lights, brightness_pct: '100' }
+                        data: { entity_id: light.shelf_01, brightness_pct: '100' }
 
               - button: # play / pause
                   <<: !include
