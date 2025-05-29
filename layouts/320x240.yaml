@@ -188,7 +188,7 @@ lvgl:
                   on_short_click:
                     - homeassistant.action:
                         action: media_player.toggle
-                        data: { entity_id: media_player.living_room_tv }
+                        data: { entity_id: media_player.${living_room_tv} }
                   on_long_press:
                     - homeassistant.action:
                         action: media_player.toggle
@@ -240,7 +240,7 @@ lvgl:
                   on_short_click:
                     - homeassistant.action:
                         action: media_player.media_stop
-                        data: { entity_id: media_player.living_room_tv }
+                        data: { entity_id: media_player.${living_room_tv} }
 
               - button: # volume down
                   <<: !include
@@ -431,7 +431,7 @@ packages:
   # living_room
   living_room_tv_widget_sensors: !include { file: widgets/buttons/icon_buttons/stateful_sensors.yaml, vars: {
     uid: living_room_tv,
-    entity_id: media_player.living_room_tv
+    entity_id: media_player.${living_room_tv}
   }}
 
   living_room_tv_extra_widgets_sensors: !include { file: widgets/living_room_tv.sensor.yaml }
