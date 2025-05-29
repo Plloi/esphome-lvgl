@@ -157,9 +157,9 @@ packages:
   boot_screen_sensors: !include { file: widgets/boot_screen/sensors.yaml }
 
   # living_room
-  living_room_tv_widget_sensors: !include { file: widgets/buttons/icon_buttons/stateful_sensors.yaml, vars: {
-    uid: living_room_tv,
-    entity_id: ${living_room_tv}
-  }}
-
+  living_room_tv_widget_sensors: !include
+    file: widgets/buttons/icon_buttons/stateful_sensors.yaml,
+    vars:
+      uid: living_room_tv,
+      entity_id: ${living_room_tv}
   living_room_tv_extra_widgets_sensors: !include { file: widgets/living_room_tv.sensor.yaml }
