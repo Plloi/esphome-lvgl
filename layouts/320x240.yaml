@@ -158,7 +158,7 @@ packages:
 
   # living_room
   living_room_tv_widget_sensors: !include
-    file: widgets/buttons/icon_buttons/stateful_sensors.yaml,
+    file: widgets/buttons/icon_buttons/stateful_sensors.yaml
     vars:
       uid: living_room_tv,
       entity_id: ${living_room_tv}
